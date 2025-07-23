@@ -1,6 +1,6 @@
 # 👋Bienvenue !
 Rendez-vous sur notre site internet pour en apprendre plus ! 
 <br>
-👉 https://kevcoorp.github.io
+👉 https://kevfr8studio.github.io
 
-**©2025 KevCoorp**
+**©2025 KevFR8 Studio**
