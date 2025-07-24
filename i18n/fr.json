@@ -10,7 +10,7 @@
     "price": "Gratuit",
     "quest1": "Pourquoi mon jeu est-il considéré comme un virus ?",
     "quest2": "Avec quels outils concevez-vous vos jeux ?",
-    "quest3": "Pourquoi « kevfr8.itch.io » ?",
+    "quest3": "Pourquoi avoir choisi ce nom et pourquoi « kevfr8.itch.io » ?",
     "quest4": "Comment nous soutenir ?",
     "answer1": "Si votre jeu est détecté comme un virus par Windows, il s’agit d’un faux positif. <br> Un faux positif désigne un programme identifié à tort comme malveillant par un antivirus. <br> Cela survient car nos jeux ne sont pas signés numériquement par un certificat reconnu par Windows, ce qui peut déclencher des alertes de sécurité.",
     "answer3": "Nous avons choisi ce nom car l’équipe de KevCorp n’est actuellement composée que d’un seul membre. <br> De plus, le lien avec itch.io permet d’associer directement le projet à son créateur, tout en simplifiant la distribution des jeux.",
