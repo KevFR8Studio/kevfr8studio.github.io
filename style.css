@@ -5,6 +5,15 @@
     src: url(./assets/fonts/PixelifySans-VariableFont_wght.ttf);
 }
 
+:root {
+    --primary-bg: #070811;
+    --secondary-bg: #0A1322;
+    --accent-bg: #0B1A3F;
+    --interactive-bg: #0F2457;
+    --text-color: #ffffff;
+    --text-color-muted: #d2d2d2;
+}
+
 .oxygen-light {
     font-family: "Oxygen", serif;
     font-weight: 300;
@@ -33,15 +42,14 @@
 }
 
 body {
-    background-color: #070811;
+    background-color: var(--primary-bg);
     color: #ffff;
     overflow: auto;
 }
 
 nav {
-
-    background-color: #0A1322;
-    padding: 15px;
+    background-color: var(--secondary-bg);
+    padding: 20px;
     margin: auto;
     font-family: PixelifySans;
     position: relative;
@@ -54,11 +62,11 @@ nav {
 
 .navLink li a {
     display: flex;
-    color: white;
+    color: var(--text-color);
 }
 
 .navLink li a:hover {
-    color: #d2d2d2;
+    color: var(--text-color-muted);
 }
 
 .navSocialIcon {
@@ -77,7 +85,7 @@ nav {
 
 .fa-github:hover,
 .fa-instagram:hover {
-    color: #d2d2d2;
+    color: var(--text-color-muted)
 }
 
 .btn-1 {
@@ -85,10 +93,10 @@ nav {
     width: 246px;
     height: 57px;
     font-size: large;
-    background: #0F2457;
+    background: var(--interactive-bg);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
     border-radius: 24px;
-    color: white;
+    color: var(--text-color);
     left: 150px;
     top: 475px;
     border: none;
@@ -98,7 +106,7 @@ nav {
 }
 
 .btn-1:hover {
-    background: #0f1d45;
+    background: var(--interactive-bg-hover);
     transform: translate(0, -5px);
 }
 
@@ -346,7 +354,7 @@ iframe {
 
 
 .container-3:hover {
-    background: #0d1634;
+    background: var(--interactive-bg-hover);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
     transform: rotate(1deg);
 }
@@ -417,6 +425,11 @@ section.footer {
 }
 
 @media screen and (max-width: 640px) {
+
+    nav {
+        padding: 25px;
+    }
+
     .box-content {
         gap: 30px;
         transform: translateY(-450px);
@@ -451,7 +464,7 @@ section.footer {
 
     .logo {
         position: relative;
-        top: 8px;
+        top: -10px;
         float: left;
         cursor: pointer;
     }
@@ -471,7 +484,6 @@ section.footer {
     }
 
     .qdLogo {
-
         position: static;
         margin: 0px auto;
         display: block;
