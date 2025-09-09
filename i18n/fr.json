@@ -1,6 +1,6 @@
-{
+﻿{
     "our games": "nos jeux",
-    "about us": "à propos de nous",
+    "about us": "à propos",
     "QD-slogan": "Sauter, collecter des pièces <br> et atteigner le drapeau!",
     "FS-slogan": "Contrôler un vaisseau spatial, tirer et marquer le meilleur score!",
     "try": "Essayer le jeu dès maintentant!",
@@ -21,6 +21,5 @@
     "ressources-tools": "&bullet; Ressources: banques de musique libres de droits.",
     "who": "Qui nous-sommes ?",
     "tools": "Nos outils",
-    "desc1": "<span>KevFR8 Studio</span> est équipe solo de développement de jeux vidéos. <span>Nous souhaitons concevoir des jeux divertissants et captivants !</span>",
-    "desc2": "Nous privilégions l'usage de logiciels libres pour la conception de nos jeux. Nous usons de logiciels comme <span>Godot Engine</span> pour développer nos jeux, <span>Aseprite</span> pour créer des assets graphiques ou bien <span>Audacity</span>."
+    "desc1": "<span>KevFR8 Studio</span> est un studio vitrine spécialisé dans le développement de jeu vidéo. <span>L'objectif est de concevoir des jeux divertissants et captivants !</span>"
 }

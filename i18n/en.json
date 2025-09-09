@@ -1,4 +1,4 @@
-{
+﻿{
     "our games": "our games",
     "about us": "about",
     "QD-slogan": "Jump, collect coins <br> and reach the flag!",
@@ -21,6 +21,5 @@
     "ressources-tools": "&bullet; Ressources: royalty-free music banks.",
     "who": "Who are we?",
     "tools": "Our tools",
-    "desc1": "<span>KevFR8 Studio</span> is a solo video game development team.<span> Our aim is to create games that are entertaining and captivating.</span>",
-    "desc2": "We prioritize the use of free software for designing our games. We use tools like <span>Godot Engine</span> to develop our games, <span>Aseprite</span> to create graphical assets, or <span>Audacity</span>."
+    "desc1": "<span>KevFR8 Studio</span> is a showcase studio specializing in game development.<span> The objective is to create games that are entertaining and captivating.</span>"
 }
