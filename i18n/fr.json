@@ -10,7 +10,7 @@
     "price": "Gratuit",
     "quest1": "Pourquoi mon jeu est-il considéré comme un virus ?",
     "quest2": "Avec quels outils concevez-vous vos jeux ?",
-    "quest3": "Pourquoi avoir choisi ce nom",
+    "quest3": "Pourquoi avoir choisi ce nom ?",
     "quest4": "Comment soutenir ?",
     "answer1": "Si votre jeu est détecté comme un virus par Windows, il s’agit d’un faux positif. <br> Un faux positif désigne un programme identifié à tort comme malveillant par un antivirus. <br> Cela survient car nos jeux ne sont pas signés numériquement par un certificat reconnu par Windows, ce qui peut déclencher des alertes de sécurité.",
     "answer3": "Le lien avec itch.io permet d’associer directement le projet à moi, tout en simplifiant la distribution des jeux.",
