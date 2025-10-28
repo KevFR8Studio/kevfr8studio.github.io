@@ -12,7 +12,8 @@
     --primary-bg: #070811;
     --secondary-bg: #0A1322;
     --accent-bg: #0B1A3F;
-    --interactive-bg: #0F2457;
+    --interactive-bg: #0f2357;
+    --interactive-bg-hover: #0a1322;
     --text-color: #ffffff;
     --text-color-muted: #d2d2d2;
 }
