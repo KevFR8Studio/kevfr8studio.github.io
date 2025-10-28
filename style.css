@@ -5,6 +5,9 @@
     src: url(./assets/fonts/PixelifySans-VariableFont_wght.ttf);
 }
 
+/* ---------------------------------------- */
+/* Header */
+/* ---------------------------------------- */
 :root {
     --primary-bg: #070811;
     --secondary-bg: #0A1322;
@@ -14,12 +17,30 @@
     --text-color-muted: #d2d2d2;
 }
 
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* ---------------------------------------- */
+/* Fonts */
+/* ---------------------------------------- */
+
 .oxygen-light {
     font-family: "Oxygen", serif;
     font-weight: 300;
     font-style: normal;
 }
-
 
 .oxygen-regular {
     font-family: "Oxygen", serif;
@@ -33,19 +54,20 @@
     font-style: normal;
 }
 
-* {
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}
+
+/* ---------------------------------------- */
+/* Body section */
+/* ---------------------------------------- */
 
 body {
     background-color: var(--primary-bg);
     color: #ffff;
     overflow: auto;
 }
+
+/* ---------------------------------------- */
+/* Nav section */
+/* ---------------------------------------- */
 
 nav {
     background-color: var(--secondary-bg);
@@ -93,6 +115,11 @@ nav {
     color: var(--text-color-muted)
 }
 
+/* ---------------------------------------- */
+/* UI section (buttons, logo) */
+/* ---------------------------------------- */
+
+/* Primary btn (home, etc.) */
 .btn-1 {
     position: absolute;
     width: 246px;
@@ -115,8 +142,41 @@ nav {
     transform: translate(0, -5px);
 }
 
-/* Background shape */
+/* Website logo */
+.logo {
+    position: relative;
+    top: -15px;
+    float: left;
+    cursor: pointer;
+}
 
+/* Qube Dash Logo */
+.qdLogo {
+    position: absolute;
+    left: 100px;
+    top: 275px;
+}
+
+/* YouTube video player */
+iframe {
+    position: relative;
+    width: 641px;
+    height: 360px;
+    left: 990px;
+    top: 150px;
+    border-radius: 30px;
+}
+
+
+span {
+    font-weight: bold;
+}
+
+/* ---------------------------------------- */
+/* Background shapes */
+/* ---------------------------------------- */
+
+/* Used in index.html */
 .diagonal-shape {
     background: #0B1A3F;
     position: absolute;
@@ -128,7 +188,7 @@ nav {
     z-index: -1;
 }
 
-
+/* Used in games.html */
 .diamond-shape {
     position: fixed;
     top: 50%;
@@ -140,6 +200,7 @@ nav {
     z-index: -1;
 }
 
+/* Used in about.html */
 .round-shape {
     content: '';
     border-top-left-radius: 100% 45%;
@@ -153,6 +214,7 @@ nav {
 
 }
 
+/* Used in our faq.html */
 .wave-shape {
     width: 100%;
     height: 100vh;
@@ -172,31 +234,13 @@ nav {
     z-index: -1;
 }
 
-body,
-html {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-
 section.round-shape {
     color: #fff;
 }
 
-
-.logo {
-    position: relative;
-    top: -15px;
-    float: left;
-    cursor: pointer;
-}
-
-.qdLogo {
-    position: absolute;
-    left: 100px;
-    top: 275px;
-}
+/* ---------------------------------------- */
+/* Titles and text */
+/* ---------------------------------------- */
 
 .p1 {
     position: absolute;
@@ -210,14 +254,6 @@ section.round-shape {
     line-height: 35px;
 }
 
-iframe {
-    position: relative;
-    width: 641px;
-    height: 360px;
-    left: 990px;
-    top: 150px;
-    border-radius: 30px;
-}
 
 .title2 {
     font-family: Oxygen;
@@ -230,7 +266,9 @@ iframe {
     margin-bottom: -75px;
 }
 
-/* Card (games page) */
+/* ---------------------------------------- */
+/* Card layout for games.html */
+/* ---------------------------------------- */
 
 .card-container {
     display: flex;
@@ -257,56 +295,24 @@ iframe {
     background-color: #0F2457;
 }
 
+.card-content {
+    padding: 16px;
+}
+
+
+/* ---------------------------------------- */
+/* Card customization for games.html (title, etc.) */
+/* ---------------------------------------- */
+
 .card img {
     width: 100%;
     height: auto;
-}
-
-.card-content {
-    padding: 16px;
 }
 
 .card-content h3 {
     font-size: 28px;
     margin-bottom: 3px;
 }
-
-/* Images (about) */
-
-.box {
-    padding: 20px;
-}
-
-.box-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    transform: translateY(450px);
-    background-color: #0d1634;
-    margin: 1.7rem auto;
-    border-radius: 50px;
-    width: min(700px, 40%);
-    padding: min(1rem);
-    box-shadow: 0 6px 15px #00000026;
-}
-
-.box-content img {
-    width: 50px;
-    cursor: pointer;
-    height: auto;
-    border-radius: 15px;
-    transition: 0.3s;
-    max-width: 100%;
-}
-
-.box-content img:hover {
-    transform: translateY(-6px);
-}
-
-
-/* Button for games page */
 
 .card-content .btn-2 {
     display: inline-block;
@@ -326,7 +332,9 @@ iframe {
     padding: 0 3px;
 }
 
-/* Container */
+/* ---------------------------------------- */
+/* Containers */
+/* ---------------------------------------- */
 
 .container-2 {
     max-width: 900px;
@@ -384,11 +392,11 @@ iframe {
     text-align: left;
 }
 
-span {
-    font-weight: bold;
-}
 
+
+/* ---------------------------------------- */
 /* Footer */
+/* ---------------------------------------- */
 
 .footer {
     background-color: #0A1322;
@@ -421,7 +429,9 @@ section.footer {
     padding: 40px 5% 20px;
 }
 
-/* Responsive Design */
+/* ---------------------------------------- */
+/* Responsive design */
+/* ---------------------------------------- */
 
 @media (min-width: 900px) {
     .box-content img {
