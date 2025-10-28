@@ -55,6 +55,11 @@ nav {
     position: relative;
 }
 
+.navLink {
+    display: flex;
+    gap: .5rem;
+}
+
 .navLink li {
     padding: 0 10px;
     display: inline-block;
