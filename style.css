@@ -333,7 +333,7 @@ section.round-shape {
 }
 
 /* ---------------------------------------- */
-/* Containers */
+/* Containers (boîte)*/
 /* ---------------------------------------- */
 
 .container-2 {
@@ -408,27 +408,26 @@ section.round-shape {
     font-family: Oxygen;
 }
 
-.footerContent li {
+.footer__content li {
     margin-bottom: 12px;
 }
 
-.footerContent li a {
+.footer__content li a {
     display: inline-block;
     color: #fff;
     font-size: 15px;
 }
 
-.footerContent li a:hover {
+.footer__content li a:hover {
     display: inline-block;
     color: #d2d2d2;
     font-size: 15px;
 }
 
-.footerLink li {
+.footer__link li {
     padding: 0 2px;
     display: inline-block;
 }
-
 
 section.footer {
     padding: 40px 5% 20px;
