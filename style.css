@@ -112,6 +112,7 @@ nav {
 }
 
 .fa-github:hover,
+.fa-youtube:hover,
 .fa-instagram:hover {
     color: var(--text-color-muted)
 }
