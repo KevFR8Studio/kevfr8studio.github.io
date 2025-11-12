@@ -219,7 +219,7 @@ span {
 /* Used in our faq.html */
 .wave-shape {
     width: 100%;
-    height: 100vh;
+    height: 164vh;
     background-color: #0B1A3F;
     position: absolute;
     top: 50%;
@@ -442,6 +442,10 @@ section.footer {
     .box-content img {
         width: 90px;
     }
+
+    .iframe {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -496,6 +500,8 @@ section.footer {
 
 }
 
+
+
 @media screen and (max-width: 768px) {
     .navSocialIcon {
         position: static;
@@ -516,10 +522,6 @@ section.footer {
         text-align: center;
         margin: 0px 0;
         font-size: 22px;
-    }
-
-    iframe {
-        display: none;
     }
 
     .btn-1 {
