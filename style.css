@@ -219,7 +219,7 @@ span {
 /* Used in our faq.html */
 .wave-shape {
     width: 100%;
-    height: 100vh;
+    height: 164vh;
     background-color: #0B1A3F;
     position: absolute;
     top: 50%;
@@ -366,7 +366,6 @@ section.round-shape {
     transition: .3s;
 }
 
-
 .container-3:hover {
     background: var(--interactive-bg-hover);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
@@ -442,6 +441,10 @@ section.footer {
     .box-content img {
         width: 90px;
     }
+
+    .iframe {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -496,6 +499,8 @@ section.footer {
 
 }
 
+
+
 @media screen and (max-width: 768px) {
     .navSocialIcon {
         position: static;
@@ -516,10 +521,6 @@ section.footer {
         text-align: center;
         margin: 0px 0;
         font-size: 22px;
-    }
-
-    iframe {
-        display: none;
     }
 
     .btn-1 {
