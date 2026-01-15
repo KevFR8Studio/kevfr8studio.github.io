@@ -14,7 +14,6 @@
     "quest4": "How to support?",
     "quest5": "Are your games made by AI?",
     "answer1": "If your game is detected as malware by Windows, it is likely a false positive. <br> A false positive refers to software incorrectly identified as malicious by antivirus programs. <br> This occurs because our games are not digitally signed  with a certificate recognized  by Windows, which can trigger security alerts.",
-    "answer3": "Linking to itch.io directly associates the project with me (KevFR8) while simplifying the distribution of video games.",
     "answer4": "The best way to help us is to play at our games, share yours feedbacks and talk all around!",
     "answer5": "The assets in our games (graphics, sounds, visuals) are created manually or use royalty-free resources. However, AI can be used as an aid, particularly for programming.",
     "dev-tools": "&bullet; Game engine: Godot Engine, GB Studio",
