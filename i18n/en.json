@@ -10,7 +10,6 @@
     "price": "Free",
     "quest1": "Why my game is considered as a virus?",
     "quest2": "What tools did you use for design your games?",
-    "quest3": "Why this name?",
     "quest4": "How to support?",
     "quest5": "Are your games made by AI?",
     "answer1": "If your game is detected as malware by Windows, it is likely a false positive. <br> A false positive refers to software incorrectly identified as malicious by antivirus programs. <br> This occurs because our games are not digitally signed  with a certificate recognized  by Windows, which can trigger security alerts.",
