@@ -91,10 +91,13 @@ nav {
 .navLink li a {
     display: flex;
     color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s ease-in;
 }
 
 .navLink li a:hover {
     color: var(--text-color-muted);
+    translate: 0 -0.5px;
 }
 
 .navSocialIcon {
@@ -126,6 +129,7 @@ nav {
     position: absolute;
     width: 246px;
     height: 57px;
+    font-family: Oxygen;
     font-size: large;
     background: var(--interactive-bg);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
