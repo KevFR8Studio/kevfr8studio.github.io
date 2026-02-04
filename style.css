@@ -508,9 +508,7 @@ section.footer {
 
 @media screen and (max-width: 768px) {
     .navSocialIcon {
-        position: static;
-        margin-top: -45px;
-        transform: none;
+        display: none;
     }
 
     .qdLogo {
