@@ -152,6 +152,7 @@ nav {
 .logo {
     position: relative;
     top: -15px;
+    right: -2px;
     float: left;
     cursor: pointer;
 }
