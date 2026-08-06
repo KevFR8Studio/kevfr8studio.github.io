@@ -60,10 +60,60 @@ html {
 /* Body section */
 /* ---------------------------------------- */
 
+
 body {
+    margin: 0;
+    color: white;
+    overflow: hidden;
     background-color: var(--primary-bg);
-    color: #ffff;
-    overflow: auto;
+}
+
+/* Vidéo */
+#qdRelease {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(7, 8, 17, 0.5), #0B1A3F);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Tout le site au-dessus */
+header,
+.main,
+.footer {
+    position: relative;
+    z-index: 2;
+}
+
+section.main p {
+    position: absolute;
+    left: 160px;
+    top: 375px;
+    font-family: PixelifySans;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+section.main .btn-1 {
+    position: absolute;
+    margin-left: 30px;
+    top: 450px;
 }
 
 /* ---------------------------------------- */
@@ -72,7 +122,7 @@ body {
 
 nav {
     background-color: var(--secondary-bg);
-    padding: 20px;
+    padding: 18px;
     margin: auto;
     font-family: PixelifySans;
     position: relative;
@@ -80,11 +130,12 @@ nav {
 
 .navLink {
     display: flex;
-    gap: .5rem;
+    font-size: clamp(8px, calc(4.364px + 1.136vw), 18px);
+    margin-left: -18px;
 }
 
 .navLink li {
-    padding: 0 10px;
+    padding: 0 8px;
     display: inline-block;
 }
 
@@ -116,6 +167,7 @@ nav {
 
 .fa-github:hover,
 .fa-youtube:hover,
+.fa-bluesky:hover,
 .fa-instagram:hover {
     color: var(--text-color-muted)
 }
@@ -126,21 +178,23 @@ nav {
 
 /* Primary btn (home, etc.) */
 .btn-1 {
-    position: absolute;
-    width: 246px;
-    height: 57px;
-    font-family: Oxygen;
-    font-size: large;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 16px 36px;
+    font: 1.35rem Oxygen, sans-serif;
+    color: #ffffff;
     background: var(--interactive-bg);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 24px;
-    color: var(--text-color);
-    left: 150px;
-    top: 475px;
     border: none;
-    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition: 0.3s ease-in;
+}
+
+.btn-1 i {
+    font-size: 1.2em;
 }
 
 .btn-1:hover {
@@ -164,17 +218,6 @@ nav {
     top: 275px;
 }
 
-/* YouTube video player */
-iframe {
-    position: relative;
-    width: 641px;
-    height: 360px;
-    left: 990px;
-    top: 150px;
-    border-radius: 30px;
-}
-
-
 span {
     font-weight: bold;
 }
@@ -183,17 +226,6 @@ span {
 /* Background shapes */
 /* ---------------------------------------- */
 
-/* Used in index.html */
-.diagonal-shape {
-    background: #0B1A3F;
-    position: absolute;
-    top: -550px;
-    left: 0;
-    right: 0;
-    height: 850px;
-    transform: skewY(135deg);
-    z-index: -1;
-}
 
 /* Used in games.html */
 .diamond-shape {
@@ -248,19 +280,6 @@ section.round-shape {
 /* ---------------------------------------- */
 /* Titles and text */
 /* ---------------------------------------- */
-
-.p1 {
-    position: absolute;
-    left: 160px;
-    top: 375px;
-    font-family: PixelifySans;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
-}
-
 
 .title {
     font-family: Oxygen;
@@ -405,9 +424,7 @@ section.round-shape {
 
 .footer {
     background-color: #0A1322;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap: 1.3em;
+    display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -415,30 +432,28 @@ section.round-shape {
     font-family: Oxygen;
 }
 
-.footer__content li {
-    margin-bottom: 12px;
-}
-
-.footer__content li a {
-    display: inline-block;
-    color: #fff;
-    font-size: 15px;
-}
-
-.footer__content li a:hover {
-    display: inline-block;
-    color: #d2d2d2;
-    font-size: 15px;
-}
-
-.footer__link li {
-    padding: 0 2px;
-    display: inline-block;
-}
-
 section.footer {
-    padding: 40px 5% 20px;
+    padding: 16px 4% 18px;
 }
+
+.footer__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content p {
+    font-size: clamp(8px, calc(4.364px + 1.136vw), 18px);
+    margin-left: -18px;
+    font-weight: 550;
+}
+
+/* Taille du logo */
+
+/* .footer__content img {
+    width: 150px;
+} */
 
 /* ---------------------------------------- */
 /* Responsive design */

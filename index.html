@@ -18,9 +18,9 @@
     <meta property="og:image:alt" content="KevFR8 Studio">
 
     <!-- link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/images/meta/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,38 +28,42 @@
     <title>KevFR8 Studio</title>
 </head>
 
+<video autoplay muted loop id="qdRelease">
+        <source src="./assets/video/qd_release.mp4" type="video/mp4">
+</video>
+
+<div class="gradient"></div>
+
 <body style="overflow: hidden;">
     <header>
         <div class="diagonal-shape"></div>
         <nav>
             <a href="./index.html"><img src="./assets/images/logo/navLogo.png" alt="KevCorp logo" class="logo"></a>
             <ul class="navLink">
-                <li><a href="./games.html" data-i18n-key="our games">our games</a></li>
-                <li><a href="./about.html" data-i18n-key="about us">about</a></li>
+                <b><li><a href="./index.html" data-i18n-key="navKey1">home</a></li></b>
+                <li><a href="./games.html" data-i18n-key="navKey2">our games</a></li>
+                <li><a href="./about.html" data-i18n-key="navKey3">about us</a></li>
                 <li><a href="./faq.html">faq</a></li>
             </ul>
             <div class="navSocialIcon">
                 <a href="https://github.com/KevFR8Studio"><i class="fa-brands fa-github"></i></a>
                 <a href="https://kevfr8studio.itch.io"><i class="fa-brands fa-itch-io"></i>
-                    <a href="https://www.youtube.com/@KevFR8Studio"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://bsky.app/profile/kevfr8studio.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
-                    <a href="https://www.instagram.com/kevfr8studio/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@KevFR8Studio"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://bsky.app/profile/kevfr8studio.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
+                <a href="https://www.instagram.com/kevfr8studio/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </nav>
     </header>
 
+
     <section class="main">
         <img src="./assets/images/logo/logo_beta.png" alt="Qube Dash Logo" class="qdLogo">
-        <p class="p1" data-i18n-key="QD-slogan">Jump, collect coins <br> and reach the flag!</p>
-        <iframe class="video-player" src="https://www.youtube.com/embed/riyP7rChdOg?si=DDrgHp9einj85XrH&amp;controls=0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="p1" data-i18n-key="QubeDashSlogan">Jump, collect coins and reach the flag!</p>
         <div class="container">
             <button class="btn-1" onclick="window.location='https://kevfr8.itch.io/qube-dash'"><i
                     class="fa-brands fa-itch-io" style="color:#ffff;padding:8px;"></i><a style="color: #ffff;"
                     data-i18n-key="try">Try
-                    the game now!</a> </button>
+                    the game now!</a></button>
         </div>
     </section>
 </body>
@@ -67,11 +71,6 @@
 <section class="footer">
     <div class="footer__content">
         <img src="./assets/images/logo/navLogo.png" alt="KevFR8 Studio logo">
-        <ul class="footer__link">
-            <li><a href="./about.html" data-i18n-key="aboutFooter">About</a></li>
-            -
-            <li><a href="./faq.html">FAQ</a></li>
-        </ul>
         <p>&copy; KevFR8 Studio, 2026</p>
     </div>
 </section>
