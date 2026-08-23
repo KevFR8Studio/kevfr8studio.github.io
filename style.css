@@ -298,6 +298,8 @@ section.round-shape {
     margin-bottom: -75px;
 }
 
+
+
 /* ---------------------------------------- */
 /* Card layout for games.html */
 /* ---------------------------------------- */
@@ -471,6 +473,15 @@ section.footer {
 
 
 @media (max-width: 650px) {
+
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    /* ------------------ */
+    /* NAV */
+    /* ------------------ */
     nav {
         position: relative;
         padding: 32px 0;
@@ -498,10 +509,11 @@ section.footer {
         display: block;
         position: absolute;
         right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 15px;
+        transform: none;
         color: white;
         font-size: 2rem;
+        z-index: 10;
     }
 
     /* Conteneur des liens masqué par défaut */
@@ -509,7 +521,6 @@ section.footer {
         display: none;
         width: 100%;
         margin-top: 15px;
-        /* Espace sous le logo */
     }
 
     /* Classe ajoutée par JavaScript au clic */
@@ -544,6 +555,9 @@ section.footer {
         display: none;
     }
 
+    /* ------------------ */
+    /* Sections */
+    /* ------------------ */
     /* Layout principal centré */
     section.main {
         display: flex;
@@ -566,6 +580,8 @@ section.footer {
     }
 
     /* Quand le menu est ouvert, on masque la vidéo, le paragraphe et le bouton */
+
+
     body.menu-open #qdRelease,
     body.menu-open .qdLogo,
     body.menu-open section.main p,
@@ -574,9 +590,19 @@ section.footer {
         display: none !important;
     }
 
+    body.menu-open .main,
+    body.menu-open .title,
+    body.menu-open .card-container,
+    body.menu-open .diamond-shape,
+    body.menu-open .round-shape,
+    body.menu-open .wave-shape {
+        display: none !important;
+    }
+
     /* Le fond devient une couleur unie (celle de ton thème) */
     body.menu-open {
         background-color: var(--secondary-bg);
+        overflow: hidden !important;
     }
 
     body.menu-open li {
@@ -606,6 +632,11 @@ section.footer {
 
     /* About page */
 
+    /* ------------------ */
+    /* Containers */
+    /* ------------------ */
+
+    /* Page à propos  */
     .container-2 {
         display: flex;
         flex-direction: column;
@@ -619,20 +650,21 @@ section.footer {
         box-shadow: none;
     }
 
-    .title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 4em;
+    .container-2 p {
+        font-size: 1.7em;
         margin: 0 auto;
-        top: 16vh;
     }
 
-    .container-2 p {
-        font-size: 2em;
-        margin: 0 auto;
+    /* Page FAQ  */
+
+    .container-3 {
+        padding: 1em 6em;
+        width: 100%;
     }
+
+    /* ------------------ */
+    /* Typographie */
+    /* ------------------ */
 
     /* Background */
 
