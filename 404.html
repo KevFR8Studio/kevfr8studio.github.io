@@ -14,25 +14,33 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./index.html"><img src="./assets/images/logo/navLogo.png" alt="KevFR8 Studio logo"
-                    class="logo"></a>
-            <ul class="navLink">
+    <nav>
+        <a href="./index.html">
+            <img src="./assets/images/logo/navLogo.png" alt="KevFR8 Studio logo" class="logo">
+        </a>
+
+        <div id="myLinks">
+            <ul>
                 <b><li><a href="./index.html" data-i18n-key="navKey1">home</a></li></b>
                 <li><a href="./games.html" data-i18n-key="navKey2">our games</a></li>
                 <li><a href="./about.html" data-i18n-key="navKey3">about us</a></li>
                 <li><a href="./faq.html">faq</a></li>
             </ul>
+
             <div class="navSocialIcon">
                 <a href="https://github.com/KevFR8Studio"><i class="fa-brands fa-github"></i></a>
-                <a href="https://kevfr8studio.itch.io"><i class="fa-brands fa-itch-io"></i>
+                <a href="https://kevfr8studio.itch.io"><i class="fa-brands fa-itch-io"></i></a>
                 <a href="https://www.youtube.com/@KevFR8Studio"><i class="fa-brands fa-youtube"></i></a>
                 <a href="https://bsky.app/profile/kevfr8studio.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
                 <a href="https://www.instagram.com/kevfr8studio/"><i class="fa-brands fa-instagram"></i></a>
             </div>
-        </nav>
-    </header>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
     <center>
         <h1 id="centered">404 not found :(</h1>
     </center>
@@ -45,5 +53,6 @@
         }
     </style>
 </body>
-
 </html>
+
+<script src="js/script.js"></script>

@@ -471,10 +471,26 @@ section.footer {
 
 
 @media (max-width: 650px) {
-
     nav {
         position: relative;
-        padding: 32px;
+        padding: 32px 0;
+    }
+
+    nav a.active {
+        background-color: #0f2357;
+        width: 100%;
+        padding: 32px 0;
+        font-weight: bold;
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 2rem;
     }
 
     /* Bouton hamburger calé à droite */
@@ -485,7 +501,7 @@ section.footer {
         top: 50%;
         transform: translateY(-50%);
         color: white;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     /* Conteneur des liens masqué par défaut */
@@ -523,13 +539,9 @@ section.footer {
         text-align: center;
     }
 
+
     nav #myLinks .navSocialIcon {
         display: none;
-    }
-
-    .active {
-        background-color: var(--interactive-bg);
-        color: white;
     }
 
     /* Layout principal centré */
@@ -542,7 +554,6 @@ section.footer {
         padding: 20px;
         text-align: center;
         box-sizing: border-box;
-        transform: translateX(-20%);
     }
 
     /* Logo du jeu (Qube Dash) */
@@ -558,6 +569,7 @@ section.footer {
     body.menu-open #qdRelease,
     body.menu-open .qdLogo,
     body.menu-open section.main p,
+    body.menu-open .logo,
     body.menu-open section.main .container {
         display: none !important;
     }
@@ -565,6 +577,10 @@ section.footer {
     /* Le fond devient une couleur unie (celle de ton thème) */
     body.menu-open {
         background-color: var(--secondary-bg);
+    }
+
+    body.menu-open li {
+        font-size: 2em;
     }
 
     /* Texte sous le logo */
@@ -586,6 +602,62 @@ section.footer {
         padding: 14px 24px;
         font-size: 1.2rem;
         white-space: nowrap;
+    }
+
+    /* About page */
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(70vh - 80px);
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        background: none;
+        box-shadow: none;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 4em;
+        margin: 0 auto;
+        top: 16vh;
+    }
+
+    .container-2 p {
+        font-size: 2em;
+        margin: 0 auto;
+    }
+
+    /* Background */
+
+    .round-shape {
+        position: relative;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    /* Pseudo-élément dédié au fond pivoté */
+    .round-shape::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 64rem;
+        background-color: #0B1A3F;
+        border-radius: 300px;
+        transform: rotate(120deg);
+        z-index: -1;
+    }
+
+    /* Assure que le contenu reste au-dessus */
+    .round-shape>* {
+        position: relative;
+        z-index: 1;
     }
 
     /* Footer */
@@ -623,11 +695,11 @@ section.footer {
 
     .footer__content p {
         font-size: 1.5rem;
-        min-height: 16vh;
+        min-height: 14vh;
+        line-height: 3;
     }
 
     .footer__content img {
         display: none;
     }
-
 }
