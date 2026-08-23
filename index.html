@@ -35,25 +35,35 @@
 <div class="gradient"></div>
 
 <body style="overflow: hidden;">
-    <header>
-        <div class="diagonal-shape"></div>
-        <nav>
-            <a href="./index.html"><img src="./assets/images/logo/navLogo.png" alt="KevCorp logo" class="logo"></a>
-            <ul class="navLink">
+<header>
+    <div class="diagonal-shape"></div>
+    <nav>
+        <a href="./index.html">
+            <img src="./assets/images/logo/navLogo.png" alt="KevCorp logo" class="logo">
+        </a>
+
+        <div id="myLinks">
+            <ul>
                 <b><li><a href="./index.html" data-i18n-key="navKey1">home</a></li></b>
                 <li><a href="./games.html" data-i18n-key="navKey2">our games</a></li>
                 <li><a href="./about.html" data-i18n-key="navKey3">about us</a></li>
                 <li><a href="./faq.html">faq</a></li>
             </ul>
+
             <div class="navSocialIcon">
                 <a href="https://github.com/KevFR8Studio"><i class="fa-brands fa-github"></i></a>
-                <a href="https://kevfr8studio.itch.io"><i class="fa-brands fa-itch-io"></i>
+                <a href="https://kevfr8studio.itch.io"><i class="fa-brands fa-itch-io"></i></a>
                 <a href="https://www.youtube.com/@KevFR8Studio"><i class="fa-brands fa-youtube"></i></a>
                 <a href="https://bsky.app/profile/kevfr8studio.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
                 <a href="https://www.instagram.com/kevfr8studio/"><i class="fa-brands fa-instagram"></i></a>
             </div>
-        </nav>
-    </header>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
 
 
     <section class="main">
@@ -70,11 +80,19 @@
 
 <section class="footer">
     <div class="footer__content">
+            <div class="footerSocialIcon">
+                <a href="https://github.com/KevFR8Studio"><i class="fa-brands fa-github"></i></a>
+                <a href="https://kevfr8studio.itch.io"><i class="fa-brands fa-itch-io"></i>
+                <a href="https://www.youtube.com/@KevFR8Studio"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://bsky.app/profile/kevfr8studio.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
+                <a href="https://www.instagram.com/kevfr8studio/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
         <img src="./assets/images/logo/navLogo.png" alt="KevFR8 Studio logo">
         <p>&copy; KevFR8 Studio, 2026</p>
     </div>
 </section>
 
+<script src="./js/script.js"></script>
 <script src="./js/translate.js"></script>
 
 </html>
